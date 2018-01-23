@@ -19,7 +19,7 @@ const todosReducer = (state = {}, action) => {
       newState = {};
 
       for (let key in state) {
-        if (state[key].id !== action.id) {
+        if (state[key].id !== action.todo.id) {
           newState[key] = state[key];
         }
       }
